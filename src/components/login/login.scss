@@ -1,0 +1,67 @@
+header {
+    position: relative;
+    padding: 50px 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
+    h1 {
+        margin: 0 auto;
+        position: relative;
+        text-shadow: 1px 1px 2px rgba(0,0,0,.8);
+        
+        &:hover .fa-bicycle {
+            animation-name: toTheSky;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            text-shadow: -5px 1px 10px #fff,
+                        1px 1px 5px rgba(0,0,0,.2),
+                        -1px -1px 6px rgba(0,0,0,.2),
+                        1px 1px 7px rgba(0,0,0,.2);;
+        }
+    }
+
+    .fa-bicycle {
+        position: absolute;
+        left: -37%;
+        top: 5px;
+        transform: rotate(-35deg);
+        // text-shadow: 1px 1px 10px rgba(0,0,0,.2);
+        transition: 0.5s ease-in-out text-shadow;
+    }
+}
+
+.login-ctn {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    
+    form[name="createAccountForm"] {
+        width: 100%;
+        position: absolute;
+        right: 0px;
+        top: -25px;
+        background: #fff;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        padding: 0 15px 10px;
+        opacity: 0;
+        transition: 0.3s ease-in opacity;
+
+        &.visible {
+            opacity: 1;
+            top: 60px;
+            z-index: 1;
+        }
+
+        input, button {
+            margin: 5px 0;
+        }
+    }
+}
+
+@keyframes toTheSky {
+    0% {left: -37%;};
+    40% {top: 5px; left: -37%; transform: rotate(-35deg);};
+    50% {top: -40px; transform: rotate(0deg);}
+    60% {top: -40px; left: 103%; transform: rotate(-35deg);};
+    100% {top: -40px; left: 103%; transform: rotate(-35deg);};
+}

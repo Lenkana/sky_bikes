@@ -1,0 +1,18 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+
+.admin-ctn {
+    margin-top: 20px;
+}
+
+.user-status {
+
+    .fa-check {
+        color: $green;
+    }
+
+    .fa-ban {
+        color: $red;
+    }
+}

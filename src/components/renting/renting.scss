@@ -1,0 +1,12 @@
+.alert {
+    opacity: 0;
+    transition: 1s ease-in-out opacity;
+
+    &.visible {
+        opacity: 1;
+    }
+}
+
+.renting-ctn {
+    margin: 30px 0;
+}

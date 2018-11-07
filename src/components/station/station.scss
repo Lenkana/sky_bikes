@@ -1,0 +1,167 @@
+@import '../../assets/colors.scss';
+
+.station-ctn  {
+    margin-bottom: 20px;
+}
+
+.bike-list {
+    background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+.station-name {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bike-btn {
+    margin: 5px 0;
+    padding: 10px;
+    transition: ease background-color .2s;
+    cursor: pointer;
+    
+    i {
+        font-size: 1.5em;
+    }
+    
+    &:hover:not(.no-bike):not(.free-slot) {
+        color: white;
+        
+        .fa-bicycle {
+            color: inherit;
+        }
+    }
+
+    &.no-bike {
+        cursor: default;
+        opacity: 0.5;
+        color: rgb(0,0,0,);
+    }
+
+    &.free-slot {
+    }
+    
+    &.bike-purple {
+        border-color: $bike-purple;
+        
+        .fa-bicycle {
+            color: $dk-bike-purple;
+        }
+        
+        &:hover {
+            color: white;
+            background: $dk-bike-purple;
+            i {
+                color: inherit;
+            }
+        }
+    } 
+    &.bike-violet {
+        border-color: $bike-violet;
+        
+        .fa-bicycle {
+            color: $dk-bike-violet;
+        }
+        
+        &:hover {
+            color: white;
+            background: $dk-bike-violet;
+            i {
+                color: inherit;
+            }
+        }
+    } 
+    &.bike-blue {
+        border-color: $bike-blue;
+        
+        .fa-bicycle {
+            color: $dk-bike-blue;
+        }
+        
+        &:hover {
+            color: white;
+            background: $dk-bike-blue;
+            i {
+                color: inherit;
+            }
+        }
+    } 
+    &.bike-green {
+        border-color: $bike-green;
+        
+        .fa-bicycle {
+            color: $dk-bike-green;
+        }
+        
+        &:hover {
+            color: white;
+            background: $dk-bike-green;
+            i {
+                color: inherit;
+            }
+        }
+    } 
+    &.bike-yellow {
+        border-color: $bike-yellow;
+        
+        .fa-bicycle {
+            color: $dk-bike-yellow;
+        }
+        
+        &:hover {
+            color: white;
+            background: $dk-bike-yellow;
+            i {
+                color: inherit;
+            }
+        }
+    } 
+    &.bike-orange {
+        border-color: $bike-orange;
+        
+        .fa-bicycle {
+            color: $dk-bike-orange;
+        }
+        
+        &:hover {
+            color: white;
+            background: $dk-bike-orange;
+            i {
+                color: inherit;
+            }
+        }
+    } 
+    &.bike-red {
+        border-color: $bike-red;
+        
+        .fa-bicycle {
+            color: $dk-bike-red;
+        }
+        
+        &:hover {
+            color: white;
+            background: $dk-bike-red;
+            i {
+                color: inherit;
+            }
+        }
+    } 
+    &.bike-red {
+        border-color: $bike-red;
+        
+        .fa-bicycle {
+            color: $dk-bike-red;
+        }
+        
+        &:hover {
+            color: white;
+            background: $dk-bike-red;
+            i {
+                color: inherit;
+            }
+        }
+    }
+    
+}

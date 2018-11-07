@@ -1,0 +1,72 @@
+@import '~font-awesome/css/font-awesome.css';
+@import './assets/colors.scss';
+
+@font-face {
+    font-family: Expletus;
+    src: url('./assets/fonts/ExpletusSans-Regular.ttf')
+}
+@font-face {
+    font-family: Expletus;
+    font-weight: 800;
+    src: url('./assets/fonts/ExpletusSans-Bold.ttf')
+}
+@font-face {
+    font-family: Expletus;
+    font-weight: 800;
+    font-style: italic;
+    src: url('./assets/fonts/ExpletusSans-BoldItalic.ttf')
+}
+@font-face {
+    font-family: Expletus;
+    font-style: italic;
+    src: url('./assets/fonts/ExpletusSans-Italic.ttf')
+}
+
+body {
+}
+
+header {
+    margin-bottom: 40px;
+    background: #1a88d7;
+    color: white;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Expletus, Georgia, 'Times New Roman', Times, serif;
+}
+
+.card {
+    text-align: center;
+}
+
+.card-img-top {
+    color: #fff;
+    font-size: 100px;
+
+    &.first-card {
+        background-color: darken($dk-bike-purple, 4%);
+    }
+
+    &.second-card {
+        background-color: $dk-bike-orange;
+    }
+
+    &.third-card {
+        background-color: darken($dk-bike-red, 4%);
+    }
+}
+
+.error-ctn {
+    position: absolute;
+    top: -70px;
+    
+    &.visible {
+        top: 0;
+    }
+}
+
+.subscribe {
+    font-size: 25px;
+    margin: 60px 0;
+    text-align: center;
+}
